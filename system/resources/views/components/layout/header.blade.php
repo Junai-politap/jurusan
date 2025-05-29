@@ -24,20 +24,20 @@
                                     <li><a href="#">Program Studi <i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="#">Teknologi Listrik</a></li>
-                                            <li><a href="#">Teknologi Informasi</a></li>
+                                            <li><a href="{{ url('https://jteti.politap.ac.id/teknologiinformasi') }}">Teknologi Informasi</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Tenaga Pengajar <i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="#">Teknologi Listrik</a></li>
-                                            <li><a href="{{url('pegawai')}}">Teknologi Informasi</a></li>
+                                            <li><a href="{{ url('dosen-teknologi-listrik') }}">Teknologi Listrik</a></li>
+                                            <li><a href="{{url('dosen-teknologi-informasi')}}">Teknologi Informasi</a></li>
                                         </ul>
                                     </li>
 
-                                      <li><a href="#">Teknisi <i class="icofont-rounded-down"></i></a>
+                                      <li><a href="#">Admin & Teknisi<i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
-                                            <li><a href="#">Teknologi Listrik</a></li>
-                                            <li><a href="{{url('pegawai')}}">Teknologi Informasi</a></li>
+                                            <li><a href="{{url('teknisi-teknologi-listrik')}}">Teknologi Listrik</a></li>
+                                            <li><a href="{{url('teknisi-teknologi-informasi')}}">Teknologi Informasi</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{url('berita')}}">Berita </a></li>
