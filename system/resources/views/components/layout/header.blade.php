@@ -27,7 +27,14 @@
                                             <li><a href="#">Teknologi Informasi</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Pegawai <i class="icofont-rounded-down"></i></a>
+                                    <li><a href="#">Tenaga Pengajar <i class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Teknologi Listrik</a></li>
+                                            <li><a href="{{url('pegawai')}}">Teknologi Informasi</a></li>
+                                        </ul>
+                                    </li>
+
+                                      <li><a href="#">Teknisi <i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="#">Teknologi Listrik</a></li>
                                             <li><a href="{{url('pegawai')}}">Teknologi Informasi</a></li>
