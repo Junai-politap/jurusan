@@ -13,3 +13,5 @@ Route::get('teknisi-teknologi-listrik', [BaseController::class, 'teknisiTE']);
 
 Route::get('berita', [BaseController::class, 'berita']);
 Route::get('berita/{berita}', [BaseController::class, 'show']);
+
+Route::get('struktur-organisasi', [BaseController::class, 'strukturOrganisasi']);

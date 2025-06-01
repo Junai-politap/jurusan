@@ -62,4 +62,9 @@ class BaseController extends Controller
         $data['data_berita'] = Berita::orderBy('id', 'DESC')->take(6)->get();
         return view('base.show', $data);
     }
+
+    public function strukturOrganisasi() {
+        
+        return view('base.struktur-organisasi');
+    }
 }

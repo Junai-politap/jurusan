@@ -3,15 +3,14 @@
     <section class="slider">
         <div class="hero-slider">
             @foreach ($list_slide as $slide)
-                <div class="single-slider"
-                    style="background-image:url('{{ url("public/$slide->gambar") }}'); object-fit: cover; position: auto; width: 100%; height: 750px;">
+                <div class="single-slider" style="background-image:url('{{ url("public/$slide->gambar") }}');">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="text" style="text-align:center; margin-top:35%">
-                                    <div class="button center">
-                                        <p class="btn" style="font-size:150%">{{ $slide->title }}</p>
-                                    </div>
+                            <div class="col-md-10">
+                                <div class="text">
+                                    <h1 style="background-color:white; text-align:center; border-radius: 25px; text-transform: uppercase;">
+                                        {{ $slide->title }}
+                                    </h1>
                                 </div>
                             </div>
                         </div>
@@ -38,28 +37,28 @@
             <div class="row">
                 @foreach ($list_visimisi_ti->where('label', 'Visi') as $visimisi_ti)
                     <div class="col-lg-6 col-12">
-                    <!-- Start Choose Left -->
-                    <div class="choose-left">
-                        <h5>{{ $visimisi_ti->label }} {{ $visimisi_ti->unit_kerja }}</h5>
-                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                             {!! nl2br ($visimisi_ti->isi) !!}
-                        </p>
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <h5>{{ $visimisi_ti->label }} {{ $visimisi_ti->unit_kerja }}</h5>
+                            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                {!! nl2br($visimisi_ti->isi) !!}
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
                     </div>
-                    <!-- End Choose Left -->
-                </div>
                 @endforeach
-                
+
                 @foreach ($list_visimisi_te->where('label', 'Visi') as $visimisi_te)
                     <div class="col-lg-6 col-12">
-                    <!-- Start Choose Left -->
-                    <div class="choose-left">
-                        <h5>{{ $visimisi_te->label }} {{ $visimisi_te->unit_kerja }}</h5>
-                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                           {!! nl2br ($visimisi_te->isi) !!}
-                        </p>
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <h5>{{ $visimisi_te->label }} {{ $visimisi_te->unit_kerja }}</h5>
+                            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                {!! nl2br($visimisi_te->isi) !!}
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
                     </div>
-                    <!-- End Choose Left -->
-                </div>
                 @endforeach
 
             </div>
@@ -67,28 +66,28 @@
             <div class="row">
                 @foreach ($list_visimisi_ti->where('label', 'Misi') as $visimisi_ti)
                     <div class="col-lg-6 col-12">
-                    <!-- Start Choose Left -->
-                    <div class="choose-left">
-                        <h5>{{ $visimisi_ti->label }} {{ $visimisi_ti->unit_kerja }}</h5>
-                        <p>
-                            {!! nl2br ($visimisi_ti->isi) !!}
-                        </p>
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <h5>{{ $visimisi_ti->label }} {{ $visimisi_ti->unit_kerja }}</h5>
+                            <p>
+                                {!! nl2br($visimisi_ti->isi) !!}
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
                     </div>
-                    <!-- End Choose Left -->
-                </div>
                 @endforeach
-                
+
                 @foreach ($list_visimisi_te->where('label', 'Misi') as $visimisi_te)
                     <div class="col-lg-6 col-12">
-                    <!-- Start Choose Left -->
-                    <div class="choose-left">
-                        <h5>{{ $visimisi_te->label }} {{ $visimisi_te->unit_kerja }}</h5>
-                        <p>
-                           {!! nl2br ($visimisi_te->isi) !!}
-                        </p>
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <h5>{{ $visimisi_te->label }} {{ $visimisi_te->unit_kerja }}</h5>
+                            <p>
+                                {!! nl2br($visimisi_te->isi) !!}
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
                     </div>
-                    <!-- End Choose Left -->
-                </div>
                 @endforeach
 
             </div>
@@ -96,28 +95,28 @@
             <div class="row">
                 @foreach ($list_visimisi_ti->where('label', 'Tujuan') as $visimisi_ti)
                     <div class="col-lg-6 col-12">
-                    <!-- Start Choose Left -->
-                    <div class="choose-left">
-                        <h5>{{ $visimisi_ti->label }} {{ $visimisi_ti->unit_kerja }}</h5>
-                        <p>
-                         {!! nl2br ($visimisi_ti->isi) !!}
-                        </p>
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <h5>{{ $visimisi_ti->label }} {{ $visimisi_ti->unit_kerja }}</h5>
+                            <p>
+                                {!! nl2br($visimisi_ti->isi) !!}
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
                     </div>
-                    <!-- End Choose Left -->
-                </div>
                 @endforeach
-                
+
                 @foreach ($list_visimisi_te->where('label', 'Tujuan') as $visimisi_te)
                     <div class="col-lg-6 col-12">
-                    <!-- Start Choose Left -->
-                    <div class="choose-left">
-                        <h5>{{ $visimisi_te->label }} {{ $visimisi_te->unit_kerja }}</h5>
-                        <p>
-                            {!! nl2br ($visimisi_te->isi) !!}
-                        </p>
+                        <!-- Start Choose Left -->
+                        <div class="choose-left">
+                            <h5>{{ $visimisi_te->label }} {{ $visimisi_te->unit_kerja }}</h5>
+                            <p>
+                                {!! nl2br($visimisi_te->isi) !!}
+                            </p>
+                        </div>
+                        <!-- End Choose Left -->
                     </div>
-                    <!-- End Choose Left -->
-                </div>
                 @endforeach
 
             </div>

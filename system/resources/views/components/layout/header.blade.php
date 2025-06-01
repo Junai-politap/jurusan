@@ -5,7 +5,7 @@
         <div class="container">
             <div class="inner">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-12">
+                    <div class="col-lg-2 col-md-2 col-12">
                         <!-- Start Logo -->
                         <div class="logo">
                             <a href="index.html"><img src="{{url('public/base')}}/jurusan.png" alt="#"></a>
@@ -15,12 +15,13 @@
                         <div class="mobile-nav"></div>
                         <!-- End Mobile Nav -->
                     </div>
-                    <div class="col-lg-9 col-md-9 col-12">
+                    <div class="col-lg-10 col-md-10 col-12">
                         <!-- Main Menu -->
                         <div class="main-menu">
                             <nav class="navigation">
                                 <ul class="nav menu">
                                     <li><a href="{{url('/')}}">Dashboard </a></li>
+                                    <li><a href="{{url('struktur-organisasi')}}">Struktur Organisasi </a></li>
                                     <li><a href="#">Program Studi <i class="icofont-rounded-down"></i></a>
                                         <ul class="dropdown">
                                             <li><a href="#">Teknologi Listrik</a></li>
