@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Base;
 use App\Http\Controllers\Controller;
 use App\Models\Berita;
 use App\Models\Pegawai;
+use App\Models\Pimpinan;
 use App\Models\Slide;
 use App\Models\VisiMisi;
 use Illuminate\Http\Request;
@@ -64,7 +65,7 @@ class BaseController extends Controller
     }
 
     public function strukturOrganisasi() {
-        
-        return view('base.struktur-organisasi');
+        $data['list_pimpinan'] = Pimpinan::all();
+        return view('base.struktur-organisasi', $data);
     }
 }
