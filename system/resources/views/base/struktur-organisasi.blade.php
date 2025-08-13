@@ -1,8 +1,11 @@
 <x-base>
     @include('section.page-title', [
-        'page_title' => 'Struktur Organiasi',
+        'page_title' => 'Struktur Organisasi',
     ])
+
     <style>
+        /* RESET STYLES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
         :root {
             --level-1: #8dccad;
             --level-2: #f5cc7f;
@@ -21,16 +24,61 @@
             list-style: none;
         }
 
+        body {
+            margin: 50px 0 100px;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        }
 
+        .container {
+            max-width: 1000px;
+            padding: 0 10px;
+            margin: 0 auto;
+        }
 
         .rectangle {
             position: relative;
             padding: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(7, 0, 0, 0.15);
         }
 
 
-       
+        /* LEVEL-1 STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .level-1 {
+            width: 50%;
+            margin: 0 auto 20px;
+            background: var(--level-1);
+        }
+
+        .level-1::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background: var(--black);
+        }
+
+        .level-1-1 {
+            width: 50%;
+            margin: 0 auto 40px;
+            background: var(--level-1);
+        }
+
+        .level-1-1::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background: var(--black);
+        }
+
 
         /* LEVEL-2 STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -227,68 +275,63 @@
         }
 
 
-        /* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-        .page-footer {
-            position: fixed;
-            right: 0;
-            bottom: 20px;
-            display: flex;
-            align-items: center;
-            padding: 5px;
-        }
-
-        .page-footer a {
-            margin-left: 4px;
-        }
+       
     </style>
-    <section class="Feautes section">
-        <div class="container">
-            <h1 class="level-1 rectangle">CEO</h1>
-            <ol class="level-2-wrapper">
-                <li>
-                    <h2 class="level-2 rectangle">Director A</h2>
-                    <ol class="level-3-wrapper">
-                        <li>
-                            <h3 class="level-3 rectangle">Manager A</h3>
-                            <ol class="level-4-wrapper">
-                                <li>
-                                    <h4 class="level-4 rectangle">Person A</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectangle">Person B</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectangle">Person C</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectangle">Person D</h4>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3 class="level-3 rectangle">Manager B</h3>
-                            <ol class="level-4-wrapper">
-                                <li>
-                                    <h4 class="level-4 rectangle">Person A</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectangle">Person B</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectangle">Person C</h4>
-                                </li>
-                                <li>
-                                    <h4 class="level-4 rectangle">Person D</h4>
-                                </li>
-                            </ol>
-                        </li>
-                    </ol>
-                </li>
-                
-            </ol>
-        </div>
+
+    <div class="container">
+        <h1 class="level-1 rectangle">Ketua Jurusan</h1>
+        <h1 class="level-1-1 rectangle">Sekretaris Jurusan</h1>
+        <ol class="level-2-wrapper">
+            <li>
+                <h2 class="level-2 rectangle">Koordinator Program Studi Teknologi Listrik</h2>
+                <ol class="level-3-wrapper">
+                    <li>
+                        <h3 class="level-3 rectangle">Kepala LAB/Bengkel</h3>
+                        <ol class="level-4-wrapper">
+                            <li>
+                                <h4 class="level-4 rectangle">Dosen Pembimbing</h4>
+                            </li>
+                            <li>
+                                <h4 class="level-4 rectangle">Dosen Pengampu</h4>
+                            </li>
+                            <li>
+                                <h4 class="level-4 rectangle">Teknisi</h4>
+                            </li>
+                            
+                        </ol>
+                    </li>
+                    <li>
+                        <h3 class="level-3 rectangle"> Admin Prodi</h3>
+                        
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <h2 class="level-2 rectangle"> Koordinator Program Studi Teknologi Informasi</h2>
+                <ol class="level-3-wrapper">
+                    <li>
+                        <h3 class="level-3 rectangle">Kepala LAB</h3>
+                        <ol class="level-4-wrapper">
+                            <li>
+                                <h4 class="level-4 rectangle"> Dosen Pembimbing</h4>
+                            </li>
+                            <li>
+                                <h4 class="level-4 rectangle">Dosen Pengampu</h4>
+                            </li>
+                            <li>
+                                <h4 class="level-4 rectangle">Teknisi</h4>
+                            </li>
+                            
+                        </ol>
+                    </li>
+                    <li>
+                        <h3 class="level-3 rectangle"> Admin Prodi</h3>
+                        
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
 
 
-    </section>
 </x-base>
